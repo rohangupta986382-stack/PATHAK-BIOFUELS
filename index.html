@@ -33,8 +33,8 @@
 
     </div>
 
-    <button class="vendor-btn">
-      Vendor Login
+    <button class="vendor-btn" onclick="vendorLogin()">
+     Vendor Login
     </button>
 
   </header>
@@ -82,26 +82,52 @@
       </div>
 
       <!-- REQUEST QUOTE -->
+<!-- REQUEST QUOTE -->
 
-      <div id="quote" class="content-box hidden">
+<div id="quote" class="content-box hidden">
 
-        <h3>Request Industrial Fuel Quote</h3>
+  <h3>Request Industrial Fuel Quote</h3>
 
-        <div class="quote-grid">
+  <form action="https://formsubmit.co/pathtakbiofuels@gmail.com" method="POST">
 
-          <input type="text" placeholder="Your Requirement">
+    <input type="hidden" name="_captcha" value="false">
 
-          <input type="text" placeholder="Contact Number">
+    <input type="hidden" name="_next" value="https://pathakbiofuels.com">
 
-          <input type="text" placeholder="Your Name">
+    <div class="quote-grid">
 
-        </div>
+      <input type="text"
+      name="requirement"
+      placeholder="Your Requirement"
+      required>
 
-        <button class="submit-btn">
-          Submit Inquiry
-        </button>
+      <input type="text"
+      name="contact"
+      placeholder="Contact Number"
+      required>
 
-      </div>
+      <input type="text"
+      name="name"
+      placeholder="Your Name"
+      required>
+
+    </div>
+
+    <button type="submit" class="submit-btn">
+      Submit Inquiry
+    </button>
+
+  </form>
+
+</div>
+
+    <button type="submit" class="submit-btn">
+      Submit Inquiry
+    </button>
+
+  </form>
+
+</div>
 
       <!-- CONTACT -->
 

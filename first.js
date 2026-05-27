@@ -1,3 +1,9 @@
+
+function vendorLogin(){
+
+  alert("Vendor Portal Coming Soon");
+
+}
 function toggleSection(id) {
   const sections = ['quote', 'contact', 'products', 'about'];
 
