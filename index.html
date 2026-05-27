@@ -83,43 +83,25 @@
 
       <!-- REQUEST QUOTE -->
 <!-- REQUEST QUOTE -->
-
 <div id="quote" class="content-box hidden">
 
   <h3>Request Industrial Fuel Quote</h3>
 
-  <form action="https://formsubmit.co/pathakbiofuels@gmail.com" method="POST">
+  <div class="quote-grid">
 
-    <input type="hidden" name="_captcha" value="false">
+    <input type="text" id="requirement" placeholder="Your Requirement" required>
 
-    <input type="hidden" name="_next" value="https://pathakbiofuels.com">
+    <input type="text" id="contact" placeholder="Contact Number" required>
 
-    <div class="quote-grid">
+    <input type="text" id="customerName" placeholder="Your Name" required>
 
-      <input type="text"
-      name="requirement"
-      placeholder="Your Requirement"
-      required>
+  </div>
 
-      <input type="text"
-      name="contact"
-      placeholder="Contact Number"
-      required>
+  <button class="submit-btn" onclick="sendInquiry()">
+    Submit Inquiry
+  </button>
 
-      <input type="text"
-      name="name"
-      placeholder="Your Name"
-      required>
-
-    </div>
-
-    <button type="submit" class="submit-btn">
-      Submit Inquiry
-    </button>
-
-  </form>
-
-   </div>
+</div>
 
       <!-- CONTACT -->
 

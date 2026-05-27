@@ -1,7 +1,24 @@
+function vendorLogin() {
+  window.location.href = "https://pathakbiofuels.com/vendor";
+}
 
-function vendorLogin(){
+function sendInquiry() {
 
-  alert("Vendor Portal Coming Soon");
+  let requirement = document.getElementById("requirement").value;
+  let contact = document.getElementById("contact").value;
+  let name = document.getElementById("customerName").value;
+
+  let subject = "New Biomass Inquiry";
+
+  let body =
+`Requirement: ${requirement}
+
+Contact Number: ${contact}
+
+Customer Name: ${name}`;
+
+  window.location.href =
+`mailto:pathakbiofuels@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
 }
 function toggleSection(id) {
